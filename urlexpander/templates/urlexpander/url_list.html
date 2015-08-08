@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>URL Expander- List o Rama</title>
+    </head>
+
+    <body>
+        <div>	
+           	<h1>A List of URLs </h1>
+        </div>
+	<div>
+		{% for url in urls %}
+			<p>ShortURL: {{ url }}</p
+			<br />
+			<p>Final Desitnation {{ url }} </p>
+		{% endfor %}
+	</div>    
+	
+    </body>
+</html>
