@@ -1,0 +1,10 @@
+from django.db import models
+from django.utils import timezone
+
+class URLExp(models.Model):
+	shorturl = models.URLField()
+	httpstat = models.PositiveIntegerField()
+	finaldestination = models.URLField()
+
+	def __str__(self):
+		return self.shorturl

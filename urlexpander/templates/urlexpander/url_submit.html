@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>URL Expander-Feed Me A URL</title>
+    </head>
+
+    <body>
+        <div>
+                <h1>Short URL Goes here... </h1>
+        </div>
+        <div>
+
+		<form method="POST">{% csrf_token %}
+		Enter  a shortened URL here ---> <input type="text" name="shorturl">
+		<br><br>
+		<input type ="submit" value="ExpandURL">
+
+		</form>
+
+        </div>
+
+    </body>
+</html>

@@ -4,14 +4,21 @@
     </head>
 
     <body>
+	<div>
+
+	</div>
+
         <div>	
-           	<h1>A List of URLs </h1>
+           	<h2>A List of URLs </h2>
         </div>
 	<div>
 		{% for url in urls %}
+			<hr>
+			<p>Page Title: {{ url.pagetitle }} </p>
 			<p>ShortURL: {{ url }}</p
-			<br />
-			<p>Final Desitnation {{ url }} </p>
+			<p>Final Destination: {{ url.finaldestination }} </p>
+			<p>HTTP Status: {{ url.httpstat }}</p>
+			<hr>
 		{% endfor %}
 	</div>    
 	
