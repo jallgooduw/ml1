@@ -5,4 +5,4 @@ class SubmitForm(forms.ModelForm):
 	
 	class Meta:
 		model = URLExp
-		fields = ('shorturl')
+		fields = ('shorturl',)
